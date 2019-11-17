@@ -3,4 +3,5 @@
 ejecutar
 ```
 npm install
+heroku config:set MONGO_URI="XXXXXXX"
 ```
