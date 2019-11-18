@@ -11,12 +11,12 @@ app.get('/usuario', [verificaToken], function (req, res) {
     let limite = Number(req.query.limite) || 5
 
 
-    Usuario.find({ estado: true, _id : req.usuario._id }, 'nombre email role estado google img')
+    Usuario.find({ estado: true}, 'nombre email role estado google img')
     .skip(desde)
     .limit(limite)
     .exec( (err, usuarios) => {
         if( err ){
-            return res.status(400).json({
+            return res.status(500).json({
                 ok: false,
                 err
             })
