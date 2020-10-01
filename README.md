@@ -1,6 +1,6 @@
-## Restserver con mongodb, express, node
+## Restserver with mongodb, express, node
 
-ejecutar
+excecute
 ```
 npm install
 heroku config:set MONGO_URI="XXXXXXX"
